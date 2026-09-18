@@ -1,30 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Halloween 🎃</title>
+<title>Halloween 2026 🎃</title>
 <style>
-body{margin:0;background:#0a0a0a;color:white;font-family:Arial;text-align:center;padding:20px}
-h1{font-size:35px;margin-top:30px}
-button{padding:15px 30px;font-size:20px;border:none;border-radius:15px;margin:10px;cursor:pointer}
-#si{background:orange}
-#no{background:#333;color:white}
-img{display:none;width:90%;max-width:400px;border-radius:20px;margin-top:20px;box-shadow:0 0 30px orange}
+body{margin:0;background:#0f0f0f;color:white;font-family:Arial;text-align:center;padding:20px}
+h1{font-size:32px;margin-top:20px}
+button{padding:14px 28px;font-size:18px;border:none;border-radius:12px;margin:10px;cursor:pointer;font-weight:bold}
+#si{background:orange;color:black}
+#no{background:#2a2a2a;color:white}
+#contenedor{display:none;margin-top:20px}
+img{width:92%;max-width:420px;border-radius:20px;box-shadow:0 0 25px orange}
 </style>
 </head>
 <body>
-<h1>🎃 ¿Querés ver mi foto de Halloween? 👻</h1>
+<h1>🎃 Egresados 2026 🎃</h1>
+<p>¿Querés ver la foto?</p>
 <button id="si" onclick="mostrar()">Sí quiero</button>
-<button id="no" onclick="alert('jaja dale, apreta que si')">No quiero</button>
-<br>
-<img id="foto" src="foto.jpg">
-<p id="texto" style="display:none">¡Acá estoy! 😎</p>
+<button id="no" onclick="document.getElementById('si').style.transform='scale(1.3)'">No quiero</button>
+
+<div id="contenedor">
+<img src="foto.jpg">
+<p>¡La mejor foto! 👻✨</p>
+</div>
+
 <script>
 function mostrar(){
- document.getElementById('foto').style.display='block';
- document.getElementById('texto').style.display='block';
+ document.getElementById('contenedor').style.display='block';
 }
 </script>
 </body>
